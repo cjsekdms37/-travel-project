@@ -7,6 +7,7 @@ header {
   font-family: poppins, sans-serif;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 header a.learn-more-link {
@@ -47,7 +48,50 @@ header h3 {
 
 body {
   margin: 0;
-  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul li a {
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/footer-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: poppins, sans-serif;
+  padding: 60px 0;
+}
+
+footer h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 480;
+}
+
+footer p,
+ul li {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+ul li:hover {
+  font-size: 14px;
+  opacity: 1;
+}
+
+footer ul {
+  padding: 0;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
@@ -56,7 +100,13 @@ body {
   max-width: 1400px;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }

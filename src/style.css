@@ -54,7 +54,8 @@ li {
   list-style-type: none;
 }
 
-ul li a {
+ul li a,
+p a {
   color: white;
 }
 
@@ -75,9 +76,15 @@ footer h3 {
 }
 
 footer p,
-ul li {
+ul li,
+p a {
   font-size: 14px;
   opacity: 0.8;
+}
+
+p a:hover {
+  font-size: 14px;
+  opacity: 1;
 }
 
 ul li:hover {

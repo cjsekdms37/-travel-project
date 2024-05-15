@@ -133,13 +133,16 @@ ul li:hover {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 95px 100px;
+  padding: 70px 100px;
 }
 
-section div img {
-  width: 100%;
+.header-img {
   display: block;
-  margin: auto auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div.header-img-box {
   max-width: 560px;
 }
 
@@ -208,6 +211,13 @@ div.card-footer {
   grid-gap: 0;
 }
 
+div.photos {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 680px;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -215,6 +225,18 @@ div.card-footer {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
+}
+
+.grid-2-col-yt {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+div.yt iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  text-align: center;
 }
 
 .secondary {
@@ -252,10 +274,9 @@ div.card-footer {
     padding: 45px 55px;
   }
 
-  section div img {
-    width: 100%;
+  .header-img-box {
     display: block;
-    margin: auto auto;
+    margin: 0 auto;
   }
 
   div.card img {
